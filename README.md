@@ -4,6 +4,6 @@
 
 Technologies Used:
 
-* HTML
+* HTML(Bootstrap)
 * Javascript 
 * jQuery
