@@ -37,7 +37,7 @@ $(document).ready(function () {
 // =================================================================
 
     // Getting random numbers
-    var getNumber = function(min, max) {
+    var getNumber = function (min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
 
@@ -67,9 +67,71 @@ $(document).ready(function () {
 
     }
 
+    // Checking to see is the user won or lost the game, + reset
+    var WinLose = function () {
+
+        // Check to see if the current score is higher than the target score
+        if (currentScore > targetScore) {
+            console.log("You lost")
+
+        // Increasing losses
+        losses++;
+
+        // Showing change in html
+        $("#loss-count").html(losses);
+
+        // Restarting the game
+        startGame()
+
+        }
+
+        else if (currentScore === targetScore) {
+            console.log("You won!!!!");
+
+            //Increasing the wins
+            wins++;
+
+            // Showing the wins in html
+            $("#win-count").html(wins);
+
+            // Restarting the game
+            startGame()
+        }
+
+    }
+
+    // Adding click functions to the nail polish
+
+    var addClicks = function (clicked) {
+
+        // Changing the current score
+        currentScore += clicked.value;
+
+        // Changing html to show changed
+        $("#your-score").html(currentScore);
+
+        WinLose();
+
+        console.log("Your Score: " + currentScore)
+
+    }
+
+    // Game Process
+
     startGame()
 
-
+    $("#purple").click(function () {
+        addClicks(polish.purple)
+    });
+    $("#green").click(function () {
+        addClicks(polish.green)
+    });
+    $("#maroon").click(function () {
+        addClicks(polish.maroon)
+    });
+    $("#white").click(function () {
+        addClicks(polish.white)
+    });
 
 
 })
