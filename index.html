@@ -1,0 +1,135 @@
+<!-- DOCTYPE TAG -->
+<!DOCTYPE html>
+
+<!-- HTML TAG -->
+<html>
+
+<!-- HEAD -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- TITLE -->
+    <title>Crystal Collector</title>
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <!--Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!--Linking css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head> <!-- END HEAD TAG -->
+
+<!-- BODY -->
+<body class="text-center">
+
+<!-- Bootstrap container-->
+<div class="container">
+
+    <!--App Name Jumbotron-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="text-center">Nail Polish Collector</h1>
+            <h2 class="text-center">See how many bottles you can collect!</h2>
+        </div>
+    </div>
+
+    <!--Instructions-->
+    <div class="row">
+
+        <!-- Instructions Container -->
+        <div class="col-lg-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Instructions</h3>
+                </div>
+                <div class="panel-body">
+                    <p><small>You will be given a random number at the start of the game. There are four bottles below. By clicking on a color, you will add a specific amount of nail polish bottles to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each color is hidden from you until you click on it. Each time when the game starts, the game will change the values of each color</small></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Scores and Nail Polish Bottles-->
+    <div class="row">
+
+        <div class="col-lg-3">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Target Score</h3>
+                </div>
+                <div class="panel-body">
+                    <h3 class="text-center" id="target-score"></h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your Score -->
+        <div class="col-lg-3">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Your Score</h3>
+                </div>
+                <div class="panel-body">
+                    <h3 class="text-center" id="your-score"></h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crystals -->
+        <div class="col-lg-6">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Nail Polish Selection</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <img src="images/darkpurple.png" alt="" id="purple">
+                    <img src="images/green.png" alt="" id="green">
+                    <img src="images/maroon.png" alt="" id="maroon">
+                    <img src="images/white.png" alt="" id="white">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</div> <!-- END CONTAINER TAG -->
+
+<!-- LINK TO JS FILE -->
+<script type="text/javascript" src="app.js"></script>
+
+<!--FOOTER-->
+<footer class="footer">
+
+    <div class="container">
+
+        <p>&copy; Sakina Shivji </p>
+
+    </div>
+
+</footer>
+
+</body> <!-- END BODY TAG -->
+
+</html> <!-- END HTML TAG -->
